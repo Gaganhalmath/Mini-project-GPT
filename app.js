@@ -1,5 +1,5 @@
-//fidential info
-const API_KEY= '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'
+
+const API_KEY= 'Enter OpenAi API key here'
 const submitButton = document.querySelector('#submit')
 const outPutElement = document.querySelector('#output')
 const inputElement = document.querySelector('input')
@@ -26,7 +26,7 @@ async function getMessage() {
         })
     }
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', options)
+        const response = await fetch('Link to fetch the response', options)
         const data = await response.json()
         console.log(data)
         outPutElement.textContent = data.choices[0].message.content
